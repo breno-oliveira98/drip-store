@@ -1,17 +1,14 @@
-
-import './App.css'
-import InputSearch from './components/Input'
+import "./App.css";
+import Header from "./components/Header";
 
 function App() {
-  
-
   return (
     <>
-      <div className='w-full h-fit py-10 bg-[var(--white)]'>
-        <InputSearch placeholder={"Search..."} id={"1"} type={"text"} />
+      <div>
+        <Header />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
