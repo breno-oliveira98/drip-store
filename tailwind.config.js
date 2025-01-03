@@ -1,4 +1,4 @@
-const flowbite = require("flowbite-react/tailwind");
+import flowbite from "flowbite-react/tailwind";
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -18,7 +18,7 @@ export default {
         warning: '#F6AA1C',
 
         darkGray: '#1F1F1F',
-        darkGray2: '#474747',
+        darkGray2: '#474747', 
         darkGray3: '#666666',
         lightGray: '#8F8F8F',
         lightGray2: '#CCCCCC',

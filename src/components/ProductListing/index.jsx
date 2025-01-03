@@ -16,7 +16,7 @@ export const ProductListing = () => {
     fetchProductsAll();
   }, []);
   return (
-    <div className="container mx-auto flex flex-wrap gap-4 mt-10">
+    <div className="container mx-auto flex flex-wrap gap-4">
       {products.map((item) => (
         <ProductCard
           key={item.id}
