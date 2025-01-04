@@ -7,7 +7,10 @@ import { Link, useLocation } from "react-router-dom";
 const Header = () => {
   const location = useLocation();
 
-  const isActive = (path) => (location.pathname === path ? "border-b-2 border-b-[var(--primary)] text-[var(--primary)] font-semibold" : "");
+  const isActive = (path) =>
+    location.pathname === path
+      ? "border-b-2 border-b-[var(--primary)] text-[var(--primary)] font-semibold"
+      : "";
   const [itemsCount, setItemsCount] = useState(1);
   return (
     <header className="w-full bg-[var(--white)] py-6">
@@ -53,7 +56,11 @@ const Header = () => {
               Home
             </Link>
           </li>
-          <li>Produtos</li>
+          <li>
+            <Link to="/produtos" className={` ${isActive("/produtos")}`}>
+              Produtos
+            </Link>
+          </li>
           <li>Categorias</li>
           <li>Meus Pedidos</li>
         </ul>
